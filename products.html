@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<nav>
+ <ul class="sidebar">
+  <li onclick=hideSidebar()><a href="#"><img src="kjkg1.png"height="29px"width="29px"></a></li>
+  <li><a href="products.html">Tshirt</a></li>
+  <li><a href="lower.html">Lower</a></li>
+  <li><a href="shoes.html">Shoes</a></li>
+  <li><a href="supplement.html">Supplements</a></li>
+  <li><a href="index.html">HOMEPAGE</a></li>
+ </ul>
+ <ul>
+  <li><font color="white">Gym wear Tshirt</font></li>
+  <li><font color="white">Bands</font></li>
+  <li><font color="white">Accessories</font></li>
+  <li onclick=showsidebar()><a href="#"><img src="kjkg.png"></a></li>
+ </ul>
+</nav>
+
+<h1 id="kun"><u><i><b>Gym wear Tshirt</b></i></u></h1>
+<div class="container">
+    <div class="product">
+      <img src="012.avif" alt="Clothing item 1">
+      <h2>Performance Heather Men's Training T-Shirt</h2>
+      <p class="price">$99</p>
+    </div>
+    <div class="product">
+      <img src="010.avif" alt="Clothing item 1">
+      <h2>PUMA Exo-Adapt Men's Training T-shirt</h2>
+      <p class="price">$199</p>
+    </div>
+    <div class="product">
+      <img src="004.avif" alt="Clothing item 1">
+      <h2>PUMA FIT Training Men's T-shirt</h2>
+      <p class="price">$199</p>
+    </div>
+    <div class="product">
+      <img src="007.avif" alt="Clothing item 1">
+      <h2>Train Graphic Men's Training T-Shirt</h2>
+      <p class="price">$199</p>
+    </div>
+    <div class="product">
+      <img src="011.avif" alt="Clothing item 1">
+      <h2>YOGINI LITE AOP Men's T-Shirt</h2>
+      <p class="price">$199</p>
+    </div>
+</div>
+
+<h1 id="kun"><u><i><b>Gym wear Jacket</b></i></u></h1><br>
+<div class="container">
+    <div class="product">
+      <img src="013.avif" alt="Clothing item 1">
+      <h2>PUMA FIT Triblend Men's Training Tee</h2>
+      <p class="price">$159</p>
+    </div>
+    <div class="product">
+      <img src="008.avif" alt="Clothing item 1">
+      <h2>PUMA Fit Double Knit Men's Full-Zip Hoodie</h2>
+      <p class="price">$159</p>
+    </div>
+    <div class="product">
+      <img src="009.avif" alt="Clothing item 1">
+      <h2>PUMA x one8 Active Men's Jacket</h2>
+      <p class="price">$399</p>
+    </div>
+    <div class="product">
+      <img src="014.avif" alt="Clothing item 1">
+      <h2>Studio Men's Performance Wash Jacket</h2>
+      <p class="price">$199</p>
+    </div>
+    <div class="product">
+      <img src="015.avif" alt="Clothing item 1">
+      <h2>Mercedes-AMG PETRONAS Men's Motorsport Hooded Sweatshirt</h2>
+      <p class="price">$179</p>
+    </div>
+</div>
+<script>
+ function showsidebar(){
+ const sidebar = document.querySelector('.sidebar');
+ sidebar.style.display = 'flex'
+ }
+ function hideSidebar(){
+ const sidebar = document.querySelector('.sidebar');
+ sidebar.style.display = 'none'
+ }
+</script>
+</body>
+</html>
