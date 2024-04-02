@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet"href="style1.css">
+</head>
+<body>
+<nav>
+ <ul class="sidebar">
+  <li onclick=hideSidebar()><a href="#"><img src="kjkg1.png"height="29px"width="29px"></a></li>
+    <li><a href="products.html">Tshirt</a></li>
+  <li><a href="lower.html">Lower</a></li>
+  <li><a href="shoes.html">Shoes</a></li>
+  <li><a href="supplement.html">Supplements</a></li>
+  <li><a href="index.html">HOMEPAGE</a></li>
+ </ul>
+ <ul>
+  <li><font color="white">Gym wear Tshirt</font></li>
+  <li><font color="white">Bands</font></li>
+  <li><font color="white">Accessories</font></li>
+  <li onclick=showsidebar()><a href="#"><img src="kjkg.png"></a></li>
+ </ul>
+</nav>
+<h1 id="kun"><u><i><b>Gym wear Shorts</b></i></u></h1>
+<div class="container">
+    <div class="product">
+      <img src="016.avif" alt="Clothing item 1">
+      <h2>Performance Woven 7" Men's Training Shorts</h2>
+      <p class="price">$150</p>
+    </div>
+    <div class="product">
+      <img src="017.avif" alt="Clothing item 1">
+      <h2>Performance Woven 7" Men's Training Shorts</h2>
+      <p class="price">$150</p>
+    </div>
+    <div class="product">
+      <img src="019.avif" alt="Clothing item 1">
+      <h2>Studio Ultramove Men's Shorts</h2>
+      <p class="price">$150</p>
+    </div>
+    <div class="product">
+      <img src="018.avif" alt="Clothing item 1">
+      <h2>PUMA TEAM Men's Relaxed Fit Shorts</h2>
+      <p class="price">$150</p>
+    </div>
+    <div class="product">
+      <img src="020.avif" alt="Clothing item 1">
+      <h2>Performance Woven Men's 5" Training Shorts</h2>
+      <p class="price">$150</p>
+    </div>
+</div>
+<h1 id="kun"><u><i><b>Gym wear Lower</b></i></u></h1>
+<div class="container">
+    <div class="product">
+      <img src="021.avif" alt="Clothing item 1">
+      <h2>Dyna-Mix Men's Regular Fit Sweatpants</h2>
+      <p class="price">$250</p>
+    </div>
+    <div class="product">
+      <img src="022.avif" alt="Clothing item 1">
+      <h2>individualCUP Men's Football Training Pants</h2>
+      <p class="price">$250</p>
+    </div>
+    <div class="product">
+      <img src="023.avif" alt="Clothing item 1">
+      <h2>KING Pro Training Men's Football Pants</h2>
+      <p class="price">$250</p>
+    </div>
+    <div class="product">
+      <img src="024.avif" alt="Clothing item 1">
+      <h2>Sportswear by PUMA Men's Relaxed Fit Sweat Pants</h2>
+      <p class="price">$250</p>
+    </div>
+    <div class="product">
+      <img src="025.avif" alt="Clothing item 1">
+      <h2>PUMA x one8 Woven Men's Slim Fit Pants</h2>
+      <p class="price">$250</p>
+    </div>
+</div>
+<script>
+ function showsidebar(){
+ const sidebar = document.querySelector('.sidebar');
+ sidebar.style.display = 'flex'
+ }
+ function hideSidebar(){
+ const sidebar = document.querySelector('.sidebar');
+ sidebar.style.display = 'none'
+ }
+</script>
+</body>
+</html>
