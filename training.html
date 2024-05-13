@@ -2,6 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <style>
@@ -43,7 +44,7 @@ TABLE{
 } 
 #w{
  text-align:center;
- color: white;
+ color: black;
  font-size: 40px;
 }
 td{
@@ -59,6 +60,30 @@ color:orange;
 transform:scale(1.04);
 transition: 0.4s;
 }
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 90%;
+	width: 70%;
+
+
+  
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sidebar tr{
+	width: 50%;
+}
+.sidebar a{
+	width: 50%;
+}
+#f{
+  margin-left: 370px;
+  margin-top: -30px;
+}
 </style>
 <script>
 function calculateBMI() {
@@ -73,11 +98,20 @@ else if(bmi>=24.9)
 document.getElementById("txt1").value="Over Weight";
 else
 document.getElementById("txt1").value="Normal";
-
+}
+function showsidebar(){
+const sidebar = document.querySelector(".sidebar")
+sidebar.style.display = 'flex'
+}
+function hidesidebar(){
+const sidebar = document.querySelector(".sidebar")
+sidebar.style.display = 'none'
 }
 
 </script>
-<div id="k"><div id="w">Height chart</div>
+<div class="sidebar">
+<div id="k"><div id="w">Height chart </div><div id="f"><span onclick="hidesidebar()"><i class="fa-solid fa-xmark"></i></span></div>
+
 <table>
 <tr>
  <th>S.NO</th>
@@ -185,8 +219,9 @@ document.getElementById("txt1").value="Normal";
  <td>195.58cm</td>
 </tr>
 </table>
-</div>
 
+</div>
+</div>
 <div class="container">
   <h1>BMI Calculator</h1>
       
@@ -201,7 +236,7 @@ document.getElementById("txt1").value="Normal";
 <ul>
 <li>NOTE</li>
 <li>For going to webpage click <button type="button" onclick="location.href='index.html'">Home</button></li>
-
+<li onclick="showsidebar()">For knowing your height in CM click <button>Open</button></li>
 </ul>
 	   </div>
 </body>
